@@ -35,7 +35,7 @@ if (isDeveloping) {
 } else {
   app.use(express.static(__dirname + '/dist'));
   app.get('*', function response(req, res) {
-    res.sendFile(path.join(__dirname, 'dist/index.html'));
+    res.sendFile(path.join(__dirname, '/index.html'));
   });
 }
 
@@ -44,4 +44,5 @@ app.listen(port, '0.0.0.0', function onStart(err) {
     console.log(err);
   }
   console.info('==> 🌎 Listening on port %s. Open up http://0.0.0.0:%s/ in your browser.', port, port);
+  console.info('==> 🌎 Built on Environment: ' + (isDeveloping ? 'Development' : 'Production'));
 });
