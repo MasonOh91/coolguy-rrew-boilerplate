@@ -1,5 +1,5 @@
 # coolguy-rrew-boilerplate
-implementing my own react-redux-express-webpack boilerplate app to better understand these techs. Initial documentation below for boilerplate:
+implementing my own react-redux-express-webpack boilerplate app to better understand these techs. Initial documentation below for [boilerplate](https://github.com/christianalfoni/webpack-express-boilerplate.git):
 
 # webpack-express-boilerplate
 A boilerplate for running a Webpack workflow in Node express

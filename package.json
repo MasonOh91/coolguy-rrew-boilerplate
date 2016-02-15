@@ -1,23 +1,25 @@
 {
-  "name": "webpack-express-boilerplate",
+  "name": "coolguy-rrew-boilerplate",
   "version": "0.1.0",
   "description": "A boilerplate for running a Webpack workflow in Node express",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/christianalfoni/webpack-express-boilerplate.git"
+    "url": "https://github.com/MasonOh91/coolguy-rrew-boilerplate.git"
   },
   "keywords": [
     "express",
     "webpack",
+    "redux",
+    "react",
     "node"
   ],
-  "author": "Christian Alfoni",
+  "author": "Mason O'Mara/Christian Alfoni",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/christianalfoni/webpack-express-boilerplate/issues"
+    "url": "https://github.com/MasonOh91/coolguy-rrew-boilerplate/issues"
   },
-  "homepage": "https://github.com/christianalfoni/webpack-express-boilerplate",
+  "homepage": "https://github.com/MasonOh91/coolguy-rrew-boilerplate",
   "scripts": {
     "test": "",
     "start": "./node_modules/.bin/babel-node server",
