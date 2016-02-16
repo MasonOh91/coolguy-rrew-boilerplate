@@ -2,30 +2,35 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as Actions from '../actions';
-import ViewData from '../components/ViewData';
-import DataControls from '../components/DataControls';
+import TodoList from '../components/TodoList';
+import TodoControls from '../components/TodoControls';
 
 class App extends Component {
     render() {
         const { state, actions } = this.props;
 
+        let todoList = '';
+        if (state) {
+            todoList = <TodoList data={state} delete_todo={actions.delete_todo} />
+        }
+
         return (
             <div className="my-app">
-                <h1 className="app-title">Hello Redux</h1>
-                <DataControls add={actions.add_data} />
-                <ViewData data={state} />
+                <h1 className="app-title">Todo? Redux</h1>
+                <TodoControls add_todo={actions.add_todo} />
+                {todoList}
             </div>
         );
-    };
-};
+    }
+}
 
 function mapStateToProps(state) {
-    return {state: state.data};
-};
+    return {state: state.todos};
+}
 
 function mapDispatchToProps(dispatch) {
     return {actions: bindActionCreators(Actions, dispatch)};
-};
+}
 
 export default connect(
     mapStateToProps,
