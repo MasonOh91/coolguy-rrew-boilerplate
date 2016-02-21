@@ -38,6 +38,7 @@
     "react-dom": "^0.14.3",
     "react-redux": "^4.4.0",
     "redux": "^3.3.1",
+    "webpack": "^1.12.2",
     "rimraf": "^2.4.3"
   },
   "devDependencies": {
@@ -69,7 +70,6 @@
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^1.6.1",
     "normalize.css": "^3.0.3",
-    "webpack": "^1.12.2",
     "jscs": "^2.1.1"
   }
 }
