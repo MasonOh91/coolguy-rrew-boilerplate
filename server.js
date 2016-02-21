@@ -1,15 +1,15 @@
 /* eslint no-console: 0 */
-var webpack = require('webpack');
 var path = require('path');
 var express = require('express');
-
-var config = require('./webpack.config');
 
 var isDeveloping = process.env.NODE_ENV !== 'production';
 var port = isDeveloping ? 3000 : process.env.PORT;
 var app = express();
 
 if (isDeveloping) {
+  var webpack = require('webpack');
+  var config = require('./webpack.config');
+
   var webpackMiddleware = require('webpack-dev-middleware');
   var webpackHotMiddleware = require('webpack-hot-middleware');
   var compiler = webpack(config);
