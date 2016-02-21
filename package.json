@@ -26,7 +26,6 @@
   "scripts": {
     "start": "node server.js",
     "build": "rimraf dist && set NODE_ENV=production && webpack --config ./webpack.production.config.js --progress --profile --colors",
-    "postinstall": "rimraf dist && set NODE_ENV=production && webpack --config ./webpack.production.config.js --progress --profile --colors",
     "clean-production": "rimraf app && rm -f .babelrc && rm -f .eslintignore && rm -f .eslintrc && rm -f .eslint && rm -f .jsbeautifyrc && rm -f .jscsrc && rm -f webpack.config.js && rm -f webpack.production.config.js", 
     "eslint": "eslint .",
     "jscs": "jscs ."
