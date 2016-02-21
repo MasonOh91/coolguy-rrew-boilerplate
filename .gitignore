@@ -4,3 +4,11 @@ node_modules
 coverage
 .idea
 .env
+app
+.babelrc
+.eslintignore
+.eslintrc,
+.jsbeautifyrc,
+.jscsrc
+webpack.config.js
+webpack.production.config.js
