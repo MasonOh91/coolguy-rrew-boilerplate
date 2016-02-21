@@ -16,7 +16,7 @@ class App extends Component {
 
         return (
             <div className="my-app">
-                <h1 className="app-title">Redux Todo Example</h1>
+                <h1 className="app-title">Redux Todo</h1>
                 <TodoControls add_todo={actions.add_todo} />
                 {todoList}
             </div>
