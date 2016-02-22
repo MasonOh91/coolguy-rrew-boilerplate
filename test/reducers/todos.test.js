@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import todos from '../../app/reducers/todos';
 
 describe('todos reducers tests', () => {
