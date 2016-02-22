@@ -3,6 +3,3 @@ deployment:
     branch: production
     heroku:
       appname: glacial-citadel-86738
-test:
-  pre:
-    - npm test
